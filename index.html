@@ -11,11 +11,11 @@
     <title>Document</title>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script type="text/javascript" src="memlist.json"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    
 </head>
 
 <body>
@@ -42,7 +42,7 @@
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+        //firebase.analytics();
         var database = firebase.database();
 
         const dbRef = firebase.database().ref();
