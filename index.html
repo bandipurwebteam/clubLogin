@@ -9,12 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <button>
-        <a href="https://chat.whatsapp.com/KXOcJf5DIKkKvkkumDijVt">
-            Test Link
-        </a>    
-    </button>
     <script>
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
@@ -24,5 +18,11 @@
             console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
         }
     </script>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <button>
+        <a href="https://chat.whatsapp.com/KXOcJf5DIKkKvkkumDijVt">
+            Test Link
+        </a>    
+    </button>
 </body>
 </html>
